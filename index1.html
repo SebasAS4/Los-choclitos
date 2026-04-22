@@ -1,0 +1,19 @@
+<section id="recepcion-producto" class="card">
+    <h2>Módulo 2: Recepción de Mercadería</h2>
+    <form id="form-recepcion">
+        <div class="form-group">
+            <label for="codigo-recepcion">Código del Producto:</label>
+            <input type="text" id="codigo-recepcion" required placeholder="Ej: PROD001">
+        </div>
+        <div class="form-group">
+            <label for="cantidad-recibida">Cantidad Recibida:</label>
+            <input type="number" id="cantidad-recibida" min="1" step="1" required>
+        </div>
+        <div class="form-group">
+            <label for="costo-compra">Costo Unitario de Compra:</label>
+            <input type="number" id="costo-compra" min="0.01" step="0.01" required>
+        </div>
+        <button type="submit" class="btn-primary" style="background-color: var(--success-color);">Registrar Recepción</button>
+    </form>
+    <div id="mensaje-recepcion" class="mensaje"></div>
+</section>
